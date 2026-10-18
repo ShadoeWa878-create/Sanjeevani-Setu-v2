@@ -1,0 +1,6 @@
+{
+  "name": "Sanjeevani Setu",
+  "description": "Technology that cares for elders. A simple, consent-first bridge between elder and caregiver with Phone-Based Reminders.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

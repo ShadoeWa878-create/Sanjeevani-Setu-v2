@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --teal: #12302F;
+    --cream: #F1E8D6;
+    --saffron-light: #F4B183;
+    --font-heading: 'Caladea', serif;
+    --font-body: 'Nunito Sans', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--teal);
+    color: var(--cream);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    background-image: linear-gradient(rgba(241, 232, 214, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(241, 232, 214, 0.04) 1px, transparent 1px);
+    background-size: 54px 54px;
+    background-position: center top;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+  }
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* Elder-Accessible High-Contrast Focus Ring */
+*:focus-visible {
+  outline: 3px solid #F4B183;
+  outline-offset: 3px;
+}
+
