@@ -13,7 +13,32 @@ export interface MedicineReminder {
   isActive: boolean;
   takenToday?: boolean;
   takenAt?: string;
+  pillColor?: string;
+  pillShape?: string;
+  remainingPills?: number;
 }
+
+export interface DailyHealthCheckin {
+  date: string;
+  bloodPressureSys: number;
+  bloodPressureDia: number;
+  bloodSugar: number;
+  waterGlasses: number;
+  mood: 'great' | 'good' | 'tired' | 'unwell';
+}
+
+export interface CaregiverActivityLog {
+  id: string;
+  medicineName: string;
+  dose: string;
+  scheduledTime: string;
+  takenAt: string;
+  date: string;
+  status: 'On Time' | 'Slight Delay' | 'Self Reported';
+  confirmationMethod: 'Spoken Phone Call' | 'SMS Reply' | 'Caregiver App (Priya)' | 'Manual Log';
+  delayMinutes?: number;
+}
+
 
 export interface Doctor {
   id: string;
